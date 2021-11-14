@@ -1,0 +1,133 @@
+Secret Number = 139826
+
+List size = 6
+Alpha:
+InOrder: 15 comparisons, 0 movement
+AlmostOrder: 15 comparisons, 3 movements
+ReverseOrder: 15 comparisons, 9 movements
+Random: 15 Comparisons, 15 movements
+
+List size = 100
+Alpha:
+InOrder: 4950 comparisons, 0 movement
+AlmostOrder: 4950 comparisons, 15 movements
+ReverseOrder: 4950 comparisons, 150 movements
+Random: 4950 Comparisons, 297 movements
+
+Alpha: Merge sort
+
+
+List size = 6
+Beta:
+InOrder: 5 comparisons, 10 movements
+AlmostOrder: 12 comparisons, 19 movements
+ReverseOrder: 15 comparisons, 25 movements
+Random: 11 Comparisons, 17 movements
+
+List size = 100
+Beta:
+InOrder: 99 comparisons, 198 movements
+AlmostOrder: 408 comparisons, 507 movements
+ReverseOrder: 4950 comparisons, 5148 movements
+Random:
+
+Beta: best case comparison is N-1: Bubble sort
+
+List size = 6
+Gamma:
+InOrder: 6 comparisons, 1 movement
+AlmostOrder: 30 comparisons, 32 movements
+ReverseOrder: 30 comparisons, 50 movements
+Random: 24 Comparisons, 37 movements
+
+List size = 12
+Gamma:
+InOrder: 12 comparisons, 1 movement
+AlmostOrder: 84 comparisons, 40 movements
+ReverseOrder: 132 comparisons, 209 movements
+Random: 72 Comparisons, 75 movements
+
+List size = 100
+Gamma:
+InOrder: 100 comparisons, 1 movement
+AlmostOrder: 5100 comparisons, 828 movements
+ReverseOrder: 9900 comparisons, 14949 movements
+Random: 9500 Comparisons, 8354 movements
+
+Gamma: Insertion Sort
+
+List size = 6
+Delta:
+InOrder: 9 comparisons, 32 movements
+AlmostOrder: 9 comparisons, 32 movements
+ReverseOrder: 7 comparisons, 32 movements
+Random: 10 Comparisons, 32 movements
+
+List size = 12
+Delta:
+InOrder: 24 comparisons, 88 movements
+AlmostOrder: 26 comparisons, 88 movements
+ReverseOrder: 20 comparisons, 88 movements
+Random: 31 Comparisons, 88 movements
+
+List size = 100
+Delta:
+InOrder: 356 comparisons, 1344 movements
+AlmostOrder: 434 comparisons, 1344 movements
+ReverseOrder: 316 comparisons, 1344 movements
+Random: 545 Comparisons, 1344 movements
+
+Delta: Quick Sort
+
+List size = 6
+Epsilon: (Selection)
+InOrder: 25 comparisons, 5 movements
+AlmostOrder: 26 comparisons, 8 movements
+ReverseOrder: 28 comparisons, 14 movements
+Random: 26 Comparisons, 20 movements
+
+List size = 12
+Epsilon: (Selection)
+InOrder: 88 comparisons, 11 movements
+AlmostOrder: 71 comparisons, 14 movements
+ReverseOrder: 94 comparisons, 29 movements
+Random: 72 Comparisons, 44 movements
+
+List size = 6
+Zeta: (check)
+InOrder: 5 comparisons, 0 movement
+AlmostOrder: 654 comparisons, 3723 movements
+ReverseOrder: 1130 comparisons, 6993 movements
+Random: 532 Comparisons, 3081 movements
+
+Rational: By recording the number of comparisons and movements
+of each algorithm with list size 6 and 100, we can use these data to
+determine the type of each algorithm.
+
+Conclusion:
+
+Alpha is Merge Sort.
+Reason: By running this algorithm on
+different sizes of data, we can see that the number of comparisons are always
+the same in all cases. This is the characteristic of Merge Sort.
+Merge sort will always take log2n divisions.
+Whether it is best or the worst case, and depth of the tree will always be the same.
+Moreover, it will always compare each pair of numbers to merge.
+
+Beta is Bubble Sort.
+Reason: We can see that for different sizes of data,
+the number of comparisons are always N-1 for best case.
+
+Gamma is Insertion Sort.
+Reason: The best case and worst case running time is matched beterrn
+Insertion Sort and Gamma.
+
+Delta is Quick Sort.
+Reason: The average number comparison is close to NlogN.
+
+Epsilon is Selection Sort.
+Reason: The average number comparison is close to N-square,
+and the number of movement is matched.
+
+Zeta is Check Sort.
+Reason: It takes the longest running time.
